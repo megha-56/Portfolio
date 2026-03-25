@@ -4,7 +4,7 @@ const Home2=()=>{
         <>
         <div className="flex h-screen w-screen bg-[#dbdbd5]">
             <div className=" h-screen w-[50%]">
-                <div className="mt-35 ml-30 relative h-100 w-100 bg-black">
+                <div className="mt-35 ml-30 relative h-100 w-100 bg-black/90">
                     <div className="absolute h-100 w-100 mt-15 ml-15 bg-cover bg-center" style={{backgroundImage:"url('port2.jpeg')"}}>
                     </div>
                 </div>
@@ -15,7 +15,7 @@ const Home2=()=>{
                 
                 <div  className="flex justify-between ">
                     <div>
-                        <div className="ml-20"><h2>who am I</h2></div>
+                        <div className="ml-20 font-sans"><h2>who am I</h2></div>
                          <div> <h1 className="text-5xl font-extrabold text-black bg-gradient-to-r from-[#ffff00] to-[#ffff00] bg-[length:100%_40%] bg-no-repeat bg-bottom">
                                 HELLO</h1>
                           </div> 
@@ -23,9 +23,9 @@ const Home2=()=>{
                      <div className="h-20 w-[50%] bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1.5px)] bg-[size:10px_10px]"></div>
                     
                 </div>
-                <div ><p>I'm a passionate Full Stack Developer specializing in the MERN stack. I love building scalable web applications with clean code and intuitive user experiences. With a strong foundation in both frontend and backend technologies, I bring ideas to life through elegant and efficient solutions.</p></div>
+                <div ><p className="font-mono">I'm a passionate Full Stack Developer specializing in the MERN stack. I love building scalable web applications with clean code and intuitive user experiences. With a strong foundation in both frontend and backend technologies, I bring ideas to life through elegant and efficient solutions.</p></div>
                 
-                <div><p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blog posts. I believe in continuous learning and love tackling challenging problems.</p></div>
+                <div><p className="font-mono">When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blog posts. I believe in continuous learning and love tackling challenging problems.</p></div>
             </div>
 
 

@@ -1,4 +1,6 @@
+
 const Hero=()=>{
+
     return(
         <>
         <div className="relative flex w-screen h-screen bg-gray-400">
@@ -10,8 +12,8 @@ const Hero=()=>{
               </div>
               <div className="h-screen w-[65%] bg-cover bg-center  bg-no-repeat " style={{backgroundImage:"url('port.jpeg')"}}>
                   <div className="flex gap-10 text-sm font-bold justify-center h-15 bg-[#525251]">
-                     <button>HOME</button>
-                     <button>ABOUT</button>
+                     <button >HOME</button>
+                     <button >ABOUT</button>
                      <button>WORKS</button>
                      <button>BLOG</button>
                      <button>CONTACT</button>
