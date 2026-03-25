@@ -5,9 +5,10 @@ const Home2=()=>{
         <div className="flex h-screen w-screen bg-[#dbdbd5]">
             <div className=" h-screen w-[50%]">
                 <div className="mt-35 ml-30 relative h-100 w-100 bg-black">
-                    <div className="absolute h-100 w-100 mt-15 ml-15 bg-cover bg-center" style={{backgroundImage:"url('port1.jpeg')"}}>
+                    <div className="absolute h-100 w-100 mt-15 ml-15 bg-cover bg-center" style={{backgroundImage:"url('port2.jpeg')"}}>
                     </div>
                 </div>
+                <div className="h-40 w-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1.5px)] bg-[size:10px_10px]"></div>
             </div>
 
             <div className=" font-bold px-50 py-50 flex flex-col gap-8  text-black">
@@ -18,12 +19,9 @@ const Home2=()=>{
                          <div> <h1 className="text-5xl font-extrabold text-black bg-gradient-to-r from-[#ffff00] to-[#ffff00] bg-[length:100%_40%] bg-no-repeat bg-bottom">
                                 HELLO</h1>
                           </div> 
-                     </div>  
-                     <div className="flex flex-col gap-5 mr-10">
-                        <div className="w-40 h-2 bg-[repeating-linear-gradient(45deg,black_0_2px,transparent_2px_6px)]"></div>
-                        <div className="w-40 h-2 bg-[repeating-linear-gradient(45deg,black_0_2px,transparent_2px_6px)]"></div>
-                        <div className="w-40 h-2 bg-[repeating-linear-gradient(45deg,black_0_2px,transparent_2px_6px)]"></div>
-                     </div>         
+                     </div>             
+                     <div className="h-20 w-[50%] bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1.5px)] bg-[size:10px_10px]"></div>
+                    
                 </div>
                 <div ><p>I'm a passionate Full Stack Developer specializing in the MERN stack. I love building scalable web applications with clean code and intuitive user experiences. With a strong foundation in both frontend and backend technologies, I bring ideas to life through elegant and efficient solutions.</p></div>
                 
