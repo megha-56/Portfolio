@@ -1,5 +1,7 @@
 "use client";
 const Projects=()=>{
-    <h1>SKILLS</h1>
+    return(
+        <h1>projects</h1>
+    )
 }
 export default Projects

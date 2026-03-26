@@ -1,5 +1,7 @@
 "use client";
 const Experience=()=>{
-    <h1>SKILLS</h1>
+   return(
+     <h1>exp</h1>
+   )
 }
 export default Experience

@@ -1,5 +1,8 @@
 "use client";
 const Skills=()=>{
-    <h1>SKILLS</h1>
+    return(
+        <h1 className="text-white">SKILLS</h1>
+    )
+    
 }
 export default Skills

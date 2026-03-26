@@ -1,12 +1,21 @@
 "use client";
 import ProfileCard from "@/components/ProfileCard"
 import MagicBento from "@/components/MagicBento";
+import { useRouter } from 'next/navigation'
+
 const About=()=>{
+  const router = useRouter()
    return(
     <>
-<div className="min-h-screen w-screen bg-white ">
-    <div className="h-12 w-screen bg-[#525251]">
-   
+<div className="min-h-screen w-screen bg-[#ecede1] ">
+    <div className="h-12 flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
+        <button  >HOME</button>
+        <button onClick={()=>{router.push('/about')}}>ABOUT</button>
+        <button onClick={()=>(router.push('/skills'))}>SKILLS</button>
+        <button onClick={()=>{router.push('/experience')}}>EXPERIENCE</button>
+        <button onClick={()=>{router.push('/projects')}}>PROJECTS</button>
+        <button onClick={()=>{router.push('/contact')}}>CONTACT</button>
+        <button >RESUME</button>
     </div>
     <div className="pt-25 flex gap-20 justify-center ">
     <div>
@@ -17,7 +26,7 @@ const About=()=>{
      handle="javicodes"
      status="Online"
      contactText="Contact Me"
-     avatarUrl="/avatar.jpg"
+     avatarUrl="/port2.jpeg"
      showUserInfo={false}
      enableTilt={true}
      enableMobileTilt={false}

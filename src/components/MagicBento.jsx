@@ -9,15 +9,15 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
     color: '#2c2c2c',
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Insights'
+    title: 'React, Next.js ,Tailwind',
+    description: '',
+    label: 'Frontend Dev'
   },
   {
     color: '#2c2c2c',
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Overview'
+    title: 'Node.js, Express, APIs',
+    description: '',
+    label: 'Backend'
   },
   {
     color: '#2c2c2c',
@@ -27,21 +27,21 @@ const cardData = [
   },
   {
     color: '#2c2c2c',
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Efficiency'
+    title: 'End-to-end solutions',
+    description: '',
+    label: 'Full Stack'
   },
   {
     color: '#2c2c2c',
-    title: 'Integration',
-    description: 'Connect favorite tools',
-    label: 'Connectivity'
+    title: 'MongoDB, PostgreSQL',
+    description: '',
+    label: 'Database'
   },
   {
     color: '#2c2c2c',
-    title: 'Security',
-    description: 'Enterprise-grade protection',
-    label: 'Protection'
+    title: 'Clean code enthusiast',
+    description: '',
+    label: 'Passion'
   }
 ];
 
@@ -503,9 +503,9 @@ const MagicBento = ({
             --border-color: rgb(255,255,255);
             --background-dark: #060010;
             --white: hsl(0, 0%, 100%);
-            --purple-primary: rgba(255,255, 255, 1);
-            --purple-glow: rgba(255,255, 255, 0.2);
-            --purple-border: rgba(255,255, 255, 0.8);
+            --purple-primary: rgba(190, 209, 19, 1);
+            --purple-glow: rgba(190, 209, 19, 0.2);
+            --purple-border: rgba(190, 209, 19, 0.8);
           }
           
           .card-responsive {
@@ -567,7 +567,7 @@ const MagicBento = ({
           }
           
           .card--border-glow:hover {
-            box-shadow: 0 4px 20px rgb(255,255,255), 0 0 30px rgba(${glowColor}, 0.2);
+            box-shadow: 0 4px 20px rgb(190, 209, 19), 0 0 30px rgba(${glowColor}, 0.2);
           }
           
           .particle::before {
@@ -583,23 +583,23 @@ const MagicBento = ({
           }
           
           .particle-container:hover {
-            box-shadow: 0 4px 20px rgba(255,255,255,0.2), 0 0 30px rgba(${glowColor}, 0.2);
+            box-shadow: 0 4px 20px rgba(190, 209, 19,0.2), 0 0 30px rgba(${glowColor}, 0.2);
           }
           
-          .text-clamp-1 {
+          .text-clamp-4 {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
+            -webkit-line-clamp: 4;
             line-clamp: 1;
             overflow: hidden;
             text-overflow: ellipsis;
           }
           
-          .text-clamp-2 {
+          .text-clamp-4 {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            line-clamp: 2;
+            -webkit-line-clamp: 4;
+            line-clamp: 1;
             overflow: hidden;
             text-overflow: ellipsis;
           }
@@ -639,7 +639,7 @@ const MagicBento = ({
 
             const cardStyle = {
               backgroundColor: card.color || 'var(--background-dark)',
-              borderColor: 'var(--border-color)',
+              borderColor: 'rgba(190, 209, 19,0.2)',
               color: 'var(--white)',
               '--glow-x': '50%',
               '--glow-y': '50%',

@@ -1,5 +1,7 @@
 "use client";
 const Contact=()=>{
-    <h1>SKILLS</h1>
+    return(
+    <h1>contacts</h1>
+    )
 }
 export default Contact
