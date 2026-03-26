@@ -1,5 +1,7 @@
-
+"use client";
+import { useRouter } from 'next/navigation'
 const Hero=()=>{
+    const router = useRouter()
 
     return(
         <>
@@ -13,10 +15,12 @@ const Hero=()=>{
               <div className="h-screen w-[65%] bg-cover bg-center  bg-no-repeat " style={{backgroundImage:"url('port.jpeg')"}}>
                   <div className="flex gap-10 text-sm font-bold justify-center h-15 bg-[#525251]">
                      <button >HOME</button>
-                     <button >ABOUT</button>
-                     <button>WORKS</button>
-                     <button>BLOG</button>
+                     <button onClick={()=>{router.push('/about')}}>ABOUT</button>
+                     <button onClick={()=>(router.push('/'))}>SKILLS</button>
+                     <button>EXPERIENCE</button>
+                     <button>PROJECTS</button>
                      <button>CONTACT</button>
+                     <button>RESUME</button>
                   </div>
               </div>
               <div className="ml-60 mt-50 absolute inset-0 flex flex-col  justify-center pointer-events-none">
