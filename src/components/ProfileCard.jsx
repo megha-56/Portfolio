@@ -34,7 +34,7 @@ const ProfileCardComponent = ({
   grainUrl = '<Placeholder for grain URL>',
   innerGradient,
   behindGlowEnabled = true,
-  behindGlowColor="190, 209, 19",
+  behindGlowColor="255,255,255",
   behindGlowSize,
   className = '',
   enableTilt = true,
@@ -309,7 +309,7 @@ const ProfileCardComponent = ({
       '--icon': iconUrl ? `url(${iconUrl})` : 'none',
       '--grain': grainUrl ? `url(${grainUrl})` : 'none',
       '--inner-gradient': innerGradient ?? DEFAULT_INNER_GRADIENT,
-      '--behind-glow-color': behindGlowColor ?? 'rgba(190, 209, 19, 0.67)',
+      '--behind-glow-color': behindGlowColor ?? 'rgba(255,255,255,0.67)',
       '--behind-glow-size': behindGlowSize ?? '50%',
       '--pointer-x': '50%',
       '--pointer-y': '50%',
@@ -458,7 +458,7 @@ const ProfileCardComponent = ({
             className="absolute inset-0"
             style={{
               backgroundImage: 'var(--inner-gradient)',
-              backgroundColor: 'rgba(190, 209, 19, 0.9)',
+              backgroundColor: 'rgba( 0.9)',
               borderRadius: cardRadius,
               display: 'grid',
               gridArea: '1 / -1'
@@ -506,14 +506,14 @@ const ProfileCardComponent = ({
                     bottom: 'var(--ui-inset)',
                     left: 'var(--ui-inset)',
                     right: 'var(--ui-inset)',
-                    background: 'rgba(190, 209, 19 0.1)',
+                    background: 'rgba( 0.1)',
                     borderRadius: 'calc(max(0px, var(--card-radius) - var(--ui-inset) + var(--ui-radius-bias)))',
                     padding: '12px 14px'
                   }}
                 >
                   <div className="flex items-center gap-3">
                     <div
-                      className="rounded-full overflow-hidden border border-white/10 flex-shrink-0"
+                      className="rounded-full overflow-hidden border border-[#cede21] flex-shrink-0"
                       style={{ width: '48px', height: '48px' }}
                     >
                       <img

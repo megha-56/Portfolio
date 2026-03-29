@@ -1,7 +1,10 @@
 "use client";
 import { useRouter } from 'next/navigation'
+import { usePathname } from "next/navigation";
 const Hero=()=>{
     const router = useRouter()
+    const pathname = usePathname();
+
 
     return(
         <>
@@ -14,13 +17,13 @@ const Hero=()=>{
               </div>
               <div className="h-screen w-[65%] bg-cover bg-center  bg-no-repeat " style={{backgroundImage:"url('port.jpeg')"}}>
                   <div className="flex gap-10 text-sm font-bold justify-center h-15 bg-[#525251]">
-                     <button  >HOME</button>
-                     <button onClick={()=>{router.push('/about')}}>ABOUT</button>
-                     <button onClick={()=>(router.push('/skills'))}>SKILLS</button>
-                     <button onClick={()=>{router.push('/experience')}}>EXPERIENCE</button>
-                     <button onClick={()=>{router.push('/projects')}}>PROJECTS</button>
-                     <button onClick={()=>{router.push('/contact')}}>CONTACT</button>
-                     <button >RESUME</button>
+                     <button onClick={()=>{router.push('/home')}} className={pathname === "/home" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>HOME</button>
+                     <button onClick={()=>{router.push('/about')}} className={pathname === "/about" ? "underline decoration-3 decoration-[#c6fa0a]" : ""} >ABOUT</button>
+                     <button onClick={()=>(router.push('/skills'))} className={pathname === "/skills" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>SKILLS</button>
+                     <button onClick={()=>{router.push('/experience')}}  className={pathname === "/experience" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>EXPERIENCE</button>
+                     <button onClick={()=>{router.push('/projects')}}  className={pathname === "/projects" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>PROJECTS</button>
+                     <button onClick={()=>{router.push('/contact')}}  className={pathname === "/contact" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>CONTACT</button>
+                     <button  className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
                   </div>
               </div>
               <div className="ml-60 mt-50 absolute inset-0 flex flex-col  justify-center pointer-events-none">
