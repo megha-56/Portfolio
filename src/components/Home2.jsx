@@ -5,8 +5,8 @@ const Home2=()=>{
         <>
         <div className="flex h-screen w-screen bg-[#dbdbd5]">
             <div className=" h-screen w-[50%]">
-                <div className="mt-35 ml-30 relative h-100 w-100 bg-black/90">
-                    <div className="absolute h-100 w-100 mt-15 ml-15 bg-cover bg-center" style={{backgroundImage:"url('port2.jpeg')"}}>
+                <div className="mt-35 ml-30 relative h-100 w-100 bg-black/90 hover:shadow-2xl">
+                    <div className="absolute h-100 w-100 mt-15 ml-15 bg-cover bg-center hover:shadow-2xl" style={{backgroundImage:"url('port2.jpeg')"}}>
                     </div>
                 </div>
                 <div className="h-40 w-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1.5px)] bg-[size:10px_10px]"></div>

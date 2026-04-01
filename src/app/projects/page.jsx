@@ -28,7 +28,7 @@ const Projects=()=>{
                 <div className='h-130 bg-white w-[27%] border border-top border-gray-300 rounded-2xl shadow object hover:shadow-2xl'>
                     <div className='flex flex-col items-center gap-3 justify-center h-50 bg-gray-100 rounded-2xl'>
                         <div className='flex justify-center items-center h-15 w-15 bg-black rounded-2xl text-2xl px-auto py-auto font-bold'>F</div>
-                        <div><h2 className='text-black/25'>E-Commerce Platform</h2></div>
+                        <div><h2 className='text-black/25'>Ice-cream Website</h2></div>
                     </div>
                     <div className='flex flex-col h-100 w-full px-7 py-5 gap-5 '>
                         <h1 className='text-xl font-bold text-black/90'>Frozen-Scoops</h1>
