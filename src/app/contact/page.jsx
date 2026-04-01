@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { FaLinkedin, FaGithub, FaTwitter,FaPaperPlane } from "react-icons/fa";
+import {toast} from "sonner";
 
 const Contact=()=>{
     const router = useRouter()
@@ -110,7 +111,7 @@ const Contact=()=>{
                         <textarea type='text' placeholder='Tell me about your project...' id='Msg' className='hover:border-gray-600  text-start h-40 w-full border text-gray-400  p-3 border-gray-300 rounded-lg  bg-black/5 resize-none'></textarea>
                    </div>
                    <div>
-                    <button className='h-13 w-full rounded-xl text-white bg-black hover:bg-gray-800'>
+                    <button className='h-13 w-full rounded-xl text-white bg-black hover:bg-gray-800 shadow hover:shadow-2xl' onClick={()=>{toast.success("Messsage sent")}}>
                         <div className='flex items-center justify-center gap-3'>
                         <FaPaperPlane className="text-sm" />
                          <h1>Send Message</h1>
