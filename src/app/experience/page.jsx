@@ -16,7 +16,7 @@ const Experience=()=>{
         <button onClick={()=>{router.push('/experience')}}  className={pathname === "/experience" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>EXPERIENCE</button>
         <button onClick={()=>{router.push('/projects')}}  className={pathname === "/projects" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>PROJECTS</button>
         <button onClick={()=>{router.push('/contact')}}  className={pathname === "/contact" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>CONTACT</button>
-        <button  className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
+        <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
     </div>
     
     <div className='flex flex-col items-center gap-5'>
@@ -38,7 +38,7 @@ const Experience=()=>{
                 Working on building and maintaining web applications using React and Node.js. Collaborating with the team on frontend UI components and backend API development.
             </p>
             </div>
-            
+
             
 
         </div>
