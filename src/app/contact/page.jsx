@@ -4,10 +4,19 @@ import { usePathname } from "next/navigation";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { FaLinkedin, FaGithub, FaTwitter,FaPaperPlane } from "react-icons/fa";
 import {toast} from "sonner";
+import { useState } from 'react';
+
 
 const Contact=()=>{
     const router = useRouter()
     const pathname = usePathname();
+    const [form,setForm]=useState({
+        name:"",
+        email:"",
+        subject:"",
+        message:"",
+    })
+    
     return(
         <>
         <div className="min-h-screen w-screen bg-white ">
@@ -94,24 +103,24 @@ const Contact=()=>{
                    <div className='flex gap-3 h-10 w-full '> 
                         <span>
                             <label className='text-black/40 text-sm' htmlFor="name">Your Name</label><br/>
-                            <input className='hover:border-gray-600  h-10 w-70 border pl-3 text-gray-300 border-gray-400 rounded-lg  bg-black/5' type='text' placeholder='Enter Your Full Name' id='name'/>
+                            <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className='hover:border-gray-600  h-10 w-70 border pl-3 text-black border-gray-400 rounded-lg  bg-black/5' type='text' placeholder='Enter Your Full Name' id='name'/>
                         </span>
                          <span>
                             <label className='text-black/40 text-sm' htmlFor="mail">Your Email</label><br/>
-                            <input className='hover:border-gray-600  h-10 w-70 border text-gray-300  pl-3 border-gray-400 rounded-lg  bg-black/5' type='text' placeholder='Enter Your E-mail' id='mail'/>
+                            <input value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className='hover:border-gray-600  h-10 w-70 border text-black pl-3 border-gray-400 rounded-lg  bg-black/5' type='text' placeholder='Enter Your E-mail' id='mail'/>
                         </span>
                  
                    </div>
                    <div className=''>
                         <label htmlFor="Subject" className='text-black/40 text-sm'>Subject</label>
-                        <input  type='text' placeholder='Project Inquiry' id="Subject" className='hover:border-gray-600 h-10 w-full border text-gray-400  pl-3 border-gray-300 rounded-lg bg-black/5'/>
+                        <input value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} type='text' placeholder='Project Inquiry' id="Subject" className='hover:border-gray-600 h-10 w-full border text-black  pl-3 border-gray-300 rounded-lg bg-black/5'/>
                    </div>
                    <div className=''>
                         <label htmlFor="Msg" className='text-black/40 text-sm'>Message</label>
-                        <textarea type='text' placeholder='Tell me about your project...' id='Msg' className='hover:border-gray-600  text-start h-40 w-full border text-gray-400  p-3 border-gray-300 rounded-lg  bg-black/5 resize-none'></textarea>
+                        <textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} type='text' placeholder='Tell me about your project...' id='Msg' className='hover:border-gray-600  text-start h-40 w-full border text-black  p-3 border-gray-300 rounded-lg  bg-black/5 resize-none'></textarea>
                    </div>
                    <div>
-                    <button className='h-13 w-full rounded-xl text-white bg-black hover:bg-gray-800 shadow hover:shadow-2xl' onClick={()=>{toast.success("Messsage sent")}}>
+                    <button className='h-13 w-full rounded-xl text-white bg-black hover:bg-gray-800 shadow hover:shadow-2xl' onClick={()=>{toast.success("Messsage sent"); setForm({name:"",email:"",subject:"",message:"",})}}>
                         <div className='flex items-center justify-center gap-3'>
                         <FaPaperPlane className="text-sm" />
                          <h1>Send Message</h1>
