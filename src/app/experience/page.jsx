@@ -20,7 +20,7 @@ const Experience=()=>{
     </div>
     
     <div className='flex flex-col items-center gap-5'>
-        <h1 className='text-5xl font-bold text-black mt-20'>Experience</h1>
+        <h1 className='text-5xl font-extrabold text-black bg-gradient-to-r from-[#f5fcca] to-[#eaff73] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-15'>Experience</h1>
         <h2 className='text-black/30 text-lg'>My professional journey</h2>
         <div className='rounded-full mx-auto h-[1] bg-black w-[5%] overflow-hidden '>
             <div className='rounded-full bg-black h-full w-full  transition-all duration-1000 ease-out'></div>

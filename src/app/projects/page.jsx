@@ -17,7 +17,7 @@ const Projects=()=>{
               <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
              </div>
              <div className='flex flex-col items-center gap-5'>
-               <h1 className='text-5xl font-bold text-black mt-20'>Featured Projects</h1>
+               <h1 className='text-5xl font-extrabold text-black bg-gradient-to-r from-[#f5fcca] to-[#eaff73] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-16'>Featured Projects</h1>
                <h2 className='text-black/30 text-lg'>Some of the things I've built recently</h2>
           
                <div className='rounded-full mx-auto h-[1] bg-black w-[15%] overflow-hidden '>

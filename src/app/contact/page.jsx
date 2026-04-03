@@ -30,7 +30,7 @@ const Contact=()=>{
              <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
           </div>
           <div className='flex flex-col items-center gap-5'>
-              <h1 className='text-5xl font-bold text-black mt-20'>Get in Touch</h1>
+              <h1 className='text-5xl font-extrabold text-black bg-gradient-to-r from-[#f5fcca] to-[#eaff73] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-20'>Get in Touch</h1>
               <h2 className='text-black/30 text-lg'>Have a project in mind? Let's work together</h2>
           
               <div className='rounded-full mx-auto h-[1] bg-black w-[5%] overflow-hidden '>
@@ -47,21 +47,21 @@ const Contact=()=>{
                         <span className='mr-4 bg-gray-200 rounded-xl p-3'><FaEnvelope className="text-black  text-lg" /></span>
                         <span>
                             <h2 className='text-xs text-black/35'>EMAIL</h2>
-                            <h2 className='text-black'>megha.panthi@email.com</h2>
+                            <h2 className='text-black'>meghapanthi435@gmail.com</h2>
                         </span>
                     </div>
                     <div className='flex '>
                         <span className='mr-4 bg-gray-200 rounded-xl p-3'><FaPhone className="text-black  text-lg" /></span>
                         <span>
                             <h2 className='text-xs text-black/35'>PHONE</h2>
-                            <h2 className='text-black'>+977-9800000000</h2>
+                            <h2 className='text-black'>8815991877</h2>
                         </span>
                     </div>
                     <div className='flex '>
                         <span className='mr-4 bg-gray-200 rounded-xl p-3'><FaMapMarkerAlt className="text-black  text-lg" /></span>
                         <span>
                             <h2 className='text-xs text-black/35'>Location</h2>
-                            <h2 className='text-black'>Nepal</h2>
+                            <h2 className='text-black'>India</h2>
                         </span>
                     </div>
                     <hr/>
