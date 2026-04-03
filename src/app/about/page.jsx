@@ -3,13 +3,33 @@ import ProfileCard from "@/components/ProfileCard"
 import MagicBento from "@/components/MagicBento";
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
+import Beams from "@/components/dotGrid";
 
 const About=()=>{
   const router = useRouter()
   const pathname = usePathname();
    return(
     <>
-<div className="min-h-screen w-screen bg-white ">
+    
+
+
+<div className="min-h-screen w-screen relative overflow-hidden ">
+
+     <div className="absolute  inset-0 -z-10">
+  <Beams
+    beamWidth={3}
+    beamHeight={30}
+    beamNumber={20}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={30}
+  />
+</div>
+
+
+
     <div className="h-12 flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
         <button onClick={()=>{router.push('/home')}} className={pathname === "/home" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>HOME</button>
          <button onClick={()=>{router.push('/about')}} className={pathname === "/about" ? "underline decoration-3 decoration-[#c6fa0a]" : ""} >ABOUT</button>

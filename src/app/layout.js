@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+// import PageTransition from "./PageTransition";
 
 
 const geistSans = Geist({
@@ -19,6 +20,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ 
   return (
     <html
       lang="en"
@@ -26,6 +28,9 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">{children}
         <Toaster position="top-right" richColors />
+        {/* <PageTransition>
+          {children}
+        </PageTransition> */}
       </body>
     </html>
   );

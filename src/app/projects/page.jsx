@@ -2,11 +2,27 @@
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
+import Beams from '@/components/dotGrid';
+
 const Projects=()=>{
     const router = useRouter()
     const pathname = usePathname();
     return(
-       <div className=" flex flex-col items-center min-h-screen w-full bg-white gap-5" >
+       <div className="relative flex flex-col items-center min-h-screen w-full gap-5" >
+
+           
+           <div className="absolute  inset-0 -z-10">
+  <Beams
+    beamWidth={3}
+    beamHeight={30}
+    beamNumber={20}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={30}
+  />
+</div>
             <div className="h-12 flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
               <button onClick={()=>{router.push('/home')}} className={pathname === "/home" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>HOME</button>
               <button onClick={()=>{router.push('/about')}} className={pathname === "/about" ? "underline decoration-3 decoration-[#c6fa0a]" : ""} >ABOUT</button>
@@ -17,15 +33,15 @@ const Projects=()=>{
               <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
              </div>
              <div className='flex flex-col items-center gap-5'>
-               <h1 className='text-5xl font-extrabold text-black bg-gradient-to-r from-[#f5fcca] to-[#eaff73] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-16'>Featured Projects</h1>
-               <h2 className='text-black/30 text-lg'>Some of the things I've built recently</h2>
+               <h1 className='text-5xl font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-16'>Featured Projects</h1>
+               <h2 className='text-white text-lg'>Some of the things I've built recently</h2>
           
-               <div className='rounded-full mx-auto h-[1] bg-black w-[15%] overflow-hidden '>
-                   <div className='rounded-full bg-black h-full w-full  transition-all duration-1000 ease-out'></div>
+               <div className='rounded-full mx-auto h-[1] bg-white   w-[15%] overflow-hidden '>
+                   <div className='rounded-full bg-white h-full w-full  transition-all  duration-1000 ease-out'></div>
                </div>
              </div>
-             <div className='flex flex-wrap gap-10 min-h-200 w-full justify-center mt-10'>
-                <div className='h-130 bg-white w-[27%] border border-top border-gray-300 rounded-2xl shadow object hover:shadow-2xl'>
+             <div className='flex flex-wrap gap-10 min-h-200 w-full  justify-center mt-10'>
+                <div className='h-130 bg-white shadow shadow-white w-[27%] border border-top border-gray-300 rounded-2xl shadow object hover:shadow-2xl'>
                     <div className='flex flex-col items-center gap-3 justify-center h-50 bg-gray-100 rounded-2xl'>
                         <div className='flex justify-center items-center h-15 w-15 bg-black rounded-2xl text-2xl px-auto py-auto font-bold'>F</div>
                         <div><h2 className='text-black/25'>Ice-cream Website</h2></div>

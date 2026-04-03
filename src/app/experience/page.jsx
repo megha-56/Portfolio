@@ -1,14 +1,29 @@
 "use client";
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
-
+import Beams from '@/components/dotGrid';
 
 
 const Experience=()=>{
     const router = useRouter()
     const pathname = usePathname();
    return(
-<div className="min-h-screen w-screen bg-white ">
+<div className="relative min-h-screen w-screen">
+
+    <div className="absolute  inset-0 -z-10">
+  <Beams
+    beamWidth={3}
+    beamHeight={30}
+    beamNumber={20}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={30}
+  />
+</div>
+
+
     <div className="h-12 flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
         <button onClick={()=>{router.push('/home')}} className={pathname === "/home" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>HOME</button>
         <button onClick={()=>{router.push('/about')}} className={pathname === "/about" ? "underline decoration-3 decoration-[#c6fa0a]" : ""} >ABOUT</button>
@@ -20,12 +35,12 @@ const Experience=()=>{
     </div>
     
     <div className='flex flex-col items-center gap-5'>
-        <h1 className='text-5xl font-extrabold text-black bg-gradient-to-r from-[#f5fcca] to-[#eaff73] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-15'>Experience</h1>
-        <h2 className='text-black/30 text-lg'>My professional journey</h2>
-        <div className='rounded-full mx-auto h-[1] bg-black w-[5%] overflow-hidden '>
-            <div className='rounded-full bg-black h-full w-full  transition-all duration-1000 ease-out'></div>
+        <h1 className='text-5xl font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-15'>Experience</h1>
+        <h2 className='text-white text-lg'>My professional journey</h2>
+        <div className='rounded-full mx-auto h-[1] bg-white w-[5%] overflow-hidden '>
+            <div className='rounded-full bg-white h-full w-full  transition-all duration-1000 ease-out'></div>
         </div>
-        <div className='flex flex-col  p-6 h-65 bg-white w-[50%] rounded-2xl transition shadow border border-gray-300 hover:shadow-2xl mt-12'>
+        <div className='flex flex-col  p-6 h-65 bg-white w-[50%] rounded-2xl transition shadow shadow-white/70 border border-gray-300 hover:shadow-2xl mt-12'>
            
             <h1 className='text-black text-lg font-bold'>Web Development Intern</h1>
             <h3 className='text-black/30'>Technova Solutions</h3>
