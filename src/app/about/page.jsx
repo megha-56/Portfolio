@@ -4,6 +4,7 @@ import MagicBento from "@/components/MagicBento";
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import Beams from "@/components/dotGrid";
+import Footer from "@/components/footer";
 
 const About=()=>{
   const router = useRouter()
@@ -30,7 +31,7 @@ const About=()=>{
 
 
 
-    <div className="h-12 flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
+    <div className="h-12  flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
         <button onClick={()=>{router.push('/home')}} className={pathname === "/home" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>HOME</button>
          <button onClick={()=>{router.push('/about')}} className={pathname === "/about" ? "underline decoration-3 decoration-[#c6fa0a]" : ""} >ABOUT</button>
         <button onClick={()=>(router.push('/skills'))} className={pathname === "/skills" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>SKILLS</button>
@@ -39,7 +40,7 @@ const About=()=>{
         <button onClick={()=>{router.push('/contact')}}  className={pathname === "/contact" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>CONTACT</button>
         <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
     </div>
-    <div className="pt-25 flex gap-20 justify-center ">
+    <div className="pt-25 text-white font-extrabold flex gap-20 justify-center ">
     <div>
      <ProfileCard
      className=""
@@ -60,7 +61,7 @@ const About=()=>{
      />
     </div>
       
-      <div className="">
+      <div className=" font-mono">
 
       <MagicBento 
        
@@ -78,6 +79,7 @@ const About=()=>{
       />
       </div>
       </div>
+      {/* <Footer/> */}
      
 </div>
 </>

@@ -34,13 +34,13 @@ const Experience=()=>{
         <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
     </div>
     
-    <div className='flex flex-col items-center gap-5'>
-        <h1 className='text-5xl font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-15'>Experience</h1>
-        <h2 className='text-white text-lg'>My professional journey</h2>
+    <div className='flex  flex-col  items-center gap-5'>
+        <h1 className='text-5xl font-mono font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-15'>Experience</h1>
+        <h2 className=' font-mono text-white text-lg'>My professional journey</h2>
         <div className='rounded-full mx-auto h-[1] bg-white w-[5%] overflow-hidden '>
             <div className='rounded-full bg-white h-full w-full  transition-all duration-1000 ease-out'></div>
         </div>
-        <div className='flex flex-col  p-6 h-65 bg-white w-[50%] rounded-2xl transition shadow shadow-white/70 border border-gray-300 hover:shadow-2xl mt-12'>
+        <div className='flex flex-col   p-6 h-65 bg-white w-[50%] rounded-2xl transition shadow shadow-white/70 border border-gray-300 hover:shadow-2xl mt-12'>
            
             <h1 className='text-black text-lg font-bold'>Web Development Intern</h1>
             <h3 className='text-black/30'>Technova Solutions</h3>
@@ -49,7 +49,7 @@ const Experience=()=>{
                 <div>Bhopal</div>
             </div>
             <div className='mt-5 w-[90%]'>
-            <p className='text-black/50 '>
+            <p className='text-  text-black/50 '>
                 Working on building and maintaining web applications using React and Node.js. Collaborating with the team on frontend UI components and backend API development.
             </p>
             </div>

@@ -44,7 +44,7 @@ const Contact=()=>{
              <button onClick={()=>{router.push('/contact')}}  className={pathname === "/contact" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>CONTACT</button>
              <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
           </div>
-          <div className='flex flex-col items-center gap-5'>
+          <div className='flex font-mono flex-col items-center gap-5'>
               <h1 className='text-5xl font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-20'>Get in Touch</h1>
               <h2 className='text-white text-lg'>Have a project in mind? Let's work together</h2>
           

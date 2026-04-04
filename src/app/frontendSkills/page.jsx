@@ -2,14 +2,13 @@
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import Beams from '@/components/dotGrid';
-const FrontendSkills=()=>{
+const frontendSkills=()=>{
     const router = useRouter()
     const pathname = usePathname();
     return(
-        <div className=" flex flex-col items-center min-h-screen w-full gap-5" >
-
-
-            <div className="absolute  inset-0 -z-10">
+        <div className=" flex flex-col items-center min-h-screen w-full  gap-5" >
+         
+         <div className="absolute  inset-0 -z-10">
   <Beams
     beamWidth={3}
     beamHeight={30}
@@ -22,7 +21,6 @@ const FrontendSkills=()=>{
   />
 </div>
 
-            
             <div className="h-12 flex justify-center gap-10 text-xs font-bold w-screen bg-[#525251] ">
               <button onClick={()=>{router.push('/home')}} className={pathname === "/home" ? "underline decoration-3 decoration-[#c6fa0a]" : ""}>HOME</button>
               <button onClick={()=>{router.push('/about')}} className={pathname === "/about" ? "underline decoration-3 decoration-[#c6fa0a]" : ""} >ABOUT</button>
@@ -50,72 +48,62 @@ const FrontendSkills=()=>{
                      <button onClick={()=>{router.push("/tools")}} className={`px-5 py-2 rounded-full text-sm font-medium transition-all duratiion-300 border border-black/10  hover:text-black hover:border-black/20 active:bg-black ${pathname === "/tools" ? "bg-white text-black" : "bg-white/50 text-black"}`}>Tools</button>
                      <button onClick={()=>{router.push("/devops")}} className={`px-5 py-2 rounded-full text-sm font-medium transition-all duratiion-300 border border-black/10  hover:text-black hover:border-black/20 active:bg-black ${pathname === "/devops" ? "bg-white text-black" : "bg-white/50 text-black"}`}>DevOps</button>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%]'>
-                <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-gray-50 transition-all duration-500 animate-fade-in-up' >
+            <div className='grid font-mono grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%]'>
+                <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover:text-gray-700 transition-colors'>React.js</span>
-                        <span className='text-black/30'>"92%"</span>
+                        <span className=' text-white font-bold shadow group-hover: transition-colors'>React.js</span>
+                        <span className='text-white/70'>"92%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
                     </div>
-                    <span className="text-xs text-gray-400 mt-2 block">Frontend</span>
+                    <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-gray-50 transition-all duration-500 animate-fade-in-up' >
+                  <div className='gradient-border bg-white/40  p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover:text-gray-700 transition-colors'>Next.js</span>
-                        <span className='text-black/30'>"90%"</span>
+                        <span className='text-white font-bold group-hover: transition-colors'>Next.js</span>
+                        <span className='text-white/70'>"90%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
                     </div>
-                    <span className="text-xs text-gray-400 mt-2 block">Frontend</span>
+                    <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
 
-
-                  
-
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-gray-50 transition-all duration-500 animate-fade-in-up' >
+                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover:text-gray-700 transition-colors'>HTML/CSS</span>
-                        <span className='text-black/30'>"99%%"</span>
+                        <span className='text-white font-bold group-hover:text- transition-colors'>HTML/CSS</span>
+                        <span className='text-white/70'>"99%%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
                     </div>
-                    <span className="text-xs text-gray-400 mt-2 block">Frontend</span>
+                    <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-gray-50 transition-all duration-500 animate-fade-in-up' >
+                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover:text-gray-700 transition-colors'>Tailwind CSS</span>
-                        <span className='text-black/30'>"95%"</span>
+                        <span className='text-white font-bold group-hover: transition-colors'>Tailwind CSS</span>
+                        <span className='text-white/70'>"95%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
                     </div>
-                    <span className="text-xs text-gray-400 mt-2 block">Frontend</span>
+                    <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
 
 
-                  
-                   
-
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-gray-50 transition-all duration-500 animate-fade-in-up' >
+                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover:text-gray-700 transition-colors'>Redux</span>
-                        <span className='text-black/30'>"5%"</span>
+                        <span className='text-white font-bold group-hover: transition-colors'>Redux</span>
+                        <span className='text-white/70'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
                     </div>
-                    <span className="text-xs text-gray-400 mt-2 block">Frontend</span>
+                    <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
-
-
-
-
 
 
             </div>
@@ -127,4 +115,4 @@ const FrontendSkills=()=>{
     )
     
 }
-export default FrontendSkills
+export default frontendSkills
