@@ -46,7 +46,7 @@ const Skills=()=>{
                 <h1 className="text-5xl font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-10">Skills & Technologies</h1>
             </div>
             <div>
-                <h2 className='text-black/40 text-lg'>Technologies I work with on a daily basis</h2>
+                <h2 className='text-white text-lg'>Technologies I work with on a daily basis</h2>
             </div>
             <div>
                 <h1 className='text-black'><hr/></h1>
