@@ -32,7 +32,7 @@ const Skills=()=>{
               <button  onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3 cursor-pointer'>RESUME</button>
         </div>
             <div>
-                <h1 className="text-5xl  font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-10">Skills & Technologies</h1>
+                <h1 className="text-5xl  font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-10 font-mono">Skills & Technologies</h1>
             </div>
             <div>
                 <h2 className='text-white font-mono text-lg'>Technologies I work with on a daily basis</h2>
