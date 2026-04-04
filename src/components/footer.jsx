@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full  bg-[#525251] text-white ">
+    <footer className="w-full font-mono  bg-[#525251] text-white ">
       <div className="max-w-6xl  mx-auto px-6 py-10">
 
         {/* Top Section */}
@@ -31,7 +31,7 @@ const Footer = () => {
               <button
                 key={i}
                 onClick={() => router.push(link.path)}
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="cursor-pointer text-gray-400 hover:text-white transition duration-300"
               >
                 {link.name}
               </button>

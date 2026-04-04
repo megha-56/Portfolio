@@ -103,7 +103,7 @@ const projects = [
                 {visibleCount < projects.length && (
                <button
                onClick={() => setVisibleCount((prev) => prev + 3)}
-               className="text-white text-xs font-bold bg-black/90 border rounded-full px-6 py-2 mb-30 mt-5"
+               className="text-white text-xs font-bold bg-black/90 border rounded-full px-6 py-2 mb-30 mt-5 cursor-pointer"
                >
                LOAD MORE
               </button>
