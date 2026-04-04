@@ -2,10 +2,12 @@
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import Beams from '@/components/dotGrid';
+import Footer from '@/components/footer';
 const Skills=()=>{
     const router = useRouter()
     const pathname = usePathname();
     return(
+        <>
         <div className=" flex flex-col items-center min-h-screen w-full  gap-5" >
          
          <div className="absolute  inset-0 -z-10">
@@ -83,6 +85,8 @@ const Skills=()=>{
    
 
         </div>
+        <Footer/>
+        </>
     )
     
 }

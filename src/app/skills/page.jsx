@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import Beams from '@/components/dotGrid';
+import Footer from '@/components/footer';
 const Skills=()=>{
     const router = useRouter()
     const pathname = usePathname();
@@ -48,7 +49,7 @@ const Skills=()=>{
                      <button onClick={()=>{router.push("/tools")}} className={`px-5 py-2 rounded-full text-sm font-medium transition-all duratiion-300 border border-black/10  hover:text-black hover:border-black/20 active:bg-black ${pathname === "/tools" ? "bg-white text-black" : "bg-white/50 text-black"}`}>Tools</button>
                      <button onClick={()=>{router.push("/devops")}} className={`px-5 py-2 rounded-full text-sm font-medium transition-all duratiion-300 border border-black/10  hover:text-black hover:border-black/20 active:bg-black ${pathname === "/devops" ? "bg-white text-black" : "bg-white/50 text-black"}`}>DevOps</button>
             </div>
-            <div className='grid font-mono grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%]'>
+            <div className='grid font-mono grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%] mb-20'>
                 <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
                         <span className=' text-white font-bold shadow group-hover: transition-colors'>React.js</span>
@@ -224,7 +225,7 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border  bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
                     <div className='flex items-center justify-between mb-3'>
                         <span className='text-white font-bold group-hover: transition-colors'>Firebase</span>
                         <span className='text-white/70'>"5%"</span>
@@ -241,6 +242,10 @@ const Skills=()=>{
 
 
             </div>
+            
+             <Footer/>
+            
+            
 
             
    

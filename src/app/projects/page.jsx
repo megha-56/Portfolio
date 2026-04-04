@@ -3,11 +3,13 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 import Beams from '@/components/dotGrid';
+import Footer from '@/components/footer';
 
 const Projects=()=>{
     const router = useRouter()
     const pathname = usePathname();
     return(
+        <>
        <div className="relative flex flex-col items-center min-h-screen w-full gap-5" >
 
            
@@ -71,6 +73,8 @@ const Projects=()=>{
 
              </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 export default Projects

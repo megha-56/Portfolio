@@ -9,7 +9,7 @@ const Home=()=>{
        <Hero/>
        <Home2/>
        <Home3/>
-       {/* <Footer/> */}
+       <Footer/>
 
       </>    
     )

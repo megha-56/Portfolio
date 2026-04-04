@@ -14,11 +14,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-black text-white mt-20">
-      <div className="max-w-6xl mx-auto px-6 py-10">
+    <footer className="w-full  bg-[#525251] text-white ">
+      <div className="max-w-6xl  mx-auto px-6 py-10">
 
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex bg-[#525251] flex-col md:flex-row justify-between items-center gap-6">
 
           {/* Logo / Name */}
           <div className="text-2xl font-bold tracking-wide">

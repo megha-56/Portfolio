@@ -2,12 +2,14 @@
 import { useRouter } from 'next/navigation';
 import { usePathname } from "next/navigation";
 import Beams from '@/components/dotGrid';
+import Footer from '@/components/footer';
 
 
 const Experience=()=>{
     const router = useRouter()
     const pathname = usePathname();
    return(
+    <>
 <div className="relative min-h-screen w-screen">
 
     <div className="absolute  inset-0 -z-10">
@@ -34,7 +36,7 @@ const Experience=()=>{
         <button onClick={() => window.open("/resume.pdf", "_blank")} className='flex border bg-black rounded-2xl h-[50%] px-4 py-1 mt-3'>RESUME</button>
     </div>
     
-    <div className='flex  flex-col  items-center gap-5'>
+    <div className='flex mb-20 flex-col  items-center gap-5'>
         <h1 className='text-5xl font-mono font-extrabold text-white bg-gradient-to-r from-[] to-[] bg-[length:100%_40%] bg-no-repeat bg-bottom mt-15'>Experience</h1>
         <h2 className=' font-mono text-white text-lg'>My professional journey</h2>
         <div className='rounded-full mx-auto h-[1] bg-white w-[5%] overflow-hidden '>
@@ -58,9 +60,13 @@ const Experience=()=>{
 
         </div>
         
+        
 
     </div>
+    
 </div>
+<Footer/>
+</>
    )
 }
 export default Experience

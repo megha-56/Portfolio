@@ -25,7 +25,7 @@ const projects = [
                 <h1 className="font-extrabold text-sm text-black">awesome projects</h1>
             </div>
             
-            <div className="flex gap-10 text-black text-xs font-bold">
+            <div className="flex gap-10  text-black text-xs font-bold">
                 <button>ALL</button>
                 <button>GRAPHIC</button>
                 <button>VIDEOS</button>
@@ -103,7 +103,7 @@ const projects = [
                 {visibleCount < projects.length && (
                <button
                onClick={() => setVisibleCount((prev) => prev + 3)}
-               className="text-white text-xs font-bold bg-black/90 border rounded-full px-6 py-2 mb-10"
+               className="text-white text-xs font-bold bg-black/90 border rounded-full px-6 py-2 mb-30 mt-5"
                >
                LOAD MORE
               </button>
