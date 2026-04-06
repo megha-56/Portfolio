@@ -50,7 +50,7 @@ const Skills=()=>{
                      <button onClick={()=>{router.push("/devops")}} className={`px-5 py-2 rounded-full text-sm font-medium transition-all duratiion-300 border border-black/10  hover:text-black hover:border-black/20 active:bg-black ${pathname === "/devops" ? "bg-white text-black" : "bg-white/50 text-black"}`}>DevOps</button>
             </div>
             <div className='grid font-mono grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%] mb-20'>
-                <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover: transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
                         <span className='  font-bold  group-hover: transition-colors'>React.js</span>
                         <span className=''>"92%"</span>
@@ -61,7 +61,7 @@ const Skills=()=>{
                     <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
 
-                  <div className='gradient-border bg-white text-black  p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
                         <span className='font-bold group-hover: transition-colors'>Next.js</span>
                         <span className='text-black'>"90%"</span>
@@ -73,10 +73,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>JavaScript</span>
-                        <span className='text-white/70'>"95%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>JavaScript</span>
+                        <span className='text-black'>"95%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -85,10 +85,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>TypeScript</span>
-                        <span className='text-white/70'>"80%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>TypeScript</span>
+                        <span className='text-black'>"80%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -96,10 +96,10 @@ const Skills=()=>{
                     <span className="text-xs text-black mt-2 block">Language</span>
                   </div>  
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover:text- transition-colors'>HTML/CSS</span>
-                        <span className='text-white/70'>"99%%"</span>
+                        <span className='text-black font-bold group-hover:text- transition-colors'>HTML/CSS</span>
+                        <span className='text-black'>"99%%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -107,10 +107,10 @@ const Skills=()=>{
                     <span className="text-xs text-black mt-2 block">Frontend</span>
                   </div>  
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Tailwind CSS</span>
-                        <span className='text-white/70'>"95%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Tailwind CSS</span>
+                        <span className='text-black'>"95%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -119,10 +119,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Node.js</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Node.js</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -131,10 +131,10 @@ const Skills=()=>{
                   </div>  
                 
 
-                <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Express.js</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Express.js</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -142,10 +142,10 @@ const Skills=()=>{
                     <span className="text-xs text-black mt-2 block">Backend</span>
                   </div>  
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>MongoDB</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>MongoDB</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -154,10 +154,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>PostgreSQL</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>PostgreSQL</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -166,10 +166,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>RestAPIs</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>RestAPIs</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -178,10 +178,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Git & Github</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Git & Github</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -190,10 +190,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Docker</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Docker</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -202,10 +202,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>AWS</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>AWS</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -213,10 +213,10 @@ const Skills=()=>{
                     <span className="text-xs text-black mt-2 block">DevOps</span>
                   </div>  
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Redux</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Redux</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -225,10 +225,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border  bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>Firebase</span>
-                        <span className='text-white/70'>"5%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>Firebase</span>
+                        <span className='text-black'>"5%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>

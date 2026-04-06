@@ -53,10 +53,10 @@ const Skills=()=>{
             <div className='grid font-mono grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%]'>
                 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>JavaScript</span>
-                        <span className='text-white/70'>"95%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>JavaScript</span>
+                        <span className='text-black'>"95%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>
@@ -65,10 +65,10 @@ const Skills=()=>{
                   </div>  
 
 
-                  <div className='gradient-border bg-white/40 p-5 rounded-2xl group hover:bg-white/60 transition-all duration-500 animate-fade-in-up shadow hover:shadow-white' >
+                  <div className='gradient-border bg-white text-black p-5 rounded-2xl group hover:shadow-xl transition-all duration-500 animate-fade-in-up shadow hover:shadow-gray-400' >
                     <div className='flex items-center justify-between mb-3'>
-                        <span className='text-white font-bold group-hover: transition-colors'>TypeScript</span>
-                        <span className='text-white/70'>"80%"</span>
+                        <span className='text-black font-bold group-hover: transition-colors'>TypeScript</span>
+                        <span className='text-black'>"80%"</span>
                     </div>
                     <div className='w-full h-1.5 rounded-full bg-gray-100 overflow-hidden'>
                         <div className='h-full rounded-full w-[92%] bg-black transition-all duration-1000 ease-out '></div>

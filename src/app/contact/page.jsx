@@ -23,8 +23,8 @@ const Contact = () => {
     <>
       <div className="min-h-screen mb-20 w-screen relative overflow-hidden">
 
-        {/* Background */}
-        <div className="absolute inset-0 -z-10">
+        {/* Page Background */}
+        <div className="absolute inset-0 -z-10 ">
           <Beams
             beamWidth={3}
             beamHeight={30}
